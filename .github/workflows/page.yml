@@ -8,7 +8,6 @@ on: # 触发条件
 jobs: # 要执行的任务，可以时多个
   deploy: # 任务名
     runs-on: ubuntu-18.04 # 在什么环境运行任务
-    steps:
       - uses: actions/checkout@v2 # 引用actions/checkout这个action，与所在的github仓库同名
       - name: test1 # 步骤名自取
       uses: peaceiris/actions-hugo@v2 # hugo官方提供的action，用于在任务环境中获取hugo
