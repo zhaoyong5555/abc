@@ -8,9 +8,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          repo: zhaoyong5555/dfg
+          repo: zhaoyong5555/Hello
           target_branch: Hello
-          build_dir: dist
     env:
       GITHUB_TOKEN: ${{ secrets.TES }}
 
