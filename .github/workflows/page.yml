@@ -8,6 +8,9 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          repo: zhaoyong5555/dfg
+          target_branch: gh-pages
+          build_dir: dist
+    env:
+      GITHUB_TOKEN: ${{ secrets.TES }}
+
