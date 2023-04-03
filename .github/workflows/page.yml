@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          repo: zhaoyong5555/Hello
+          repo-name: zhaoyong5555/Hello
           target_branch: Hello
     env:
       GITHUB_TOKEN: ${{ secrets.TES }}
