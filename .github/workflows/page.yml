@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           repo: zhaoyong5555/abc
-          target_branch: abc
+          target_branch:abc
     env:
       GITHUB_TOKEN: ${{ secrets.TES }}
 
