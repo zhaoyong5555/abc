@@ -10,19 +10,8 @@ jobs: # 要执行的任务，可以时多个
     runs-on: ubuntu-18.04 # 在什么环境运行任务
     steps:
       - uses: actions/checkout@v2 # 引用actions/checkout这个action，与所在的github仓库同名
-	    # with:
-          # submodules: true # Fetch Hugo themes (true OR recursive) 获取submodule主题
-          # fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: test1 # 步骤名自取
       uses: peaceiris/actions-hugo@v2 # hugo官方提供的action，用于在任务环境中获取hugo
-      # with:
-        # hugo-version: 'latest' # 获取最新版本的hugo
-		
-#       - name: Build
-#       run: hugo --minify # 使用hugo构建静态网页
-
-      - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3 # 一个自动发布github pages的action
       with:
         external_repository: dccmmtop/dccmmtop.github.io # 发布到哪个repo
         personal_token: TES # 发布到其他repo需要提供上面生成的personal access token
