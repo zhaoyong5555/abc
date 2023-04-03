@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           repo: zhaoyong5555/dfg
-          target_branch: gh-pages
+          target_branch: Hello
           build_dir: dist
     env:
       GITHUB_TOKEN: ${{ secrets.TES }}
