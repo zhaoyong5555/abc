@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
+      - name: 安装包
+        run: pip install numpy
       # You can test your matrix by printing the current Python version
       - name: Display Python version
+        
         run: python -m pytest.py
