@@ -2,7 +2,7 @@ name: 'python action'
 
 on:
   schedule:
-    - cron: '11 2 * * *'
+    - cron: '* 1-8 * * 1-5'
 
 jobs:
   bot:
