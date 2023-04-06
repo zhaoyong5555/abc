@@ -1,6 +1,8 @@
 name: 'python action'
 
 on:
+  push:
+    branches: [ master ]
   schedule:
     - cron: '0 0 15 * *'
 
