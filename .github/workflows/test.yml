@@ -1,7 +1,7 @@
 name: 'python action2' # name指的是这套工作流程的名称，可以自定义
 on: # on是指这套工作流程的trigger条件，即在push时，或者设置指定时间触发
   schedule:
-    - cron: '0 12-24 * * 1-5' # 参考链接：https://blog.csdn.net/github_35780607/article/details/125866755?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168074286616800211570572%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=168074286616800211570572&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~pc_rank_34-3-125866755-null-null.142^v81^pc_new_rank,201^v4^add_ask,239^v2^insert_chatgpt&utm_term=schedule%3A%20%20%20%20%20-%20cron%3A%20&spm=1018.2226.3001.4187 （时间按照格林威治时间配置，一共可以设置七位，{秒数} {分钟} {小时} {日期} {月份} {星期} {年份(可为空)}， 最好设置五位，按有些博客设置六位就会报错）
+    - cron: '0 0-12 * * 1-5' # 参考链接：https://blog.csdn.net/github_35780607/article/details/125866755?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168074286616800211570572%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=168074286616800211570572&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~pc_rank_34-3-125866755-null-null.142^v81^pc_new_rank,201^v4^add_ask,239^v2^insert_chatgpt&utm_term=schedule%3A%20%20%20%20%20-%20cron%3A%20&spm=1018.2226.3001.4187 （时间按照格林威治时间配置，一共可以设置七位，{秒数} {分钟} {小时} {日期} {月份} {星期} {年份(可为空)}， 最好设置五位，按有些博客设置六位就会报错）
 jobs: # jobs就是这套工作流程了
   bot:
     runs-on: ubuntu-latest # 指定该job_id下的运行环境
