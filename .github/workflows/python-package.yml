@@ -1,9 +1,7 @@
 name: 'python action'
 
 # push推送到master动作,pull_request是合并到master动作
-on:
-  schedule:
-    - cron: '0 2 * * *'
+on: [push]
 
 jobs:
   bot:
